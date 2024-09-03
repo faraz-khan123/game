@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snake, Water, Gun Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Snake, Water, Gun Game</h1>
+        <p>Choose your move:</p>
+        <div class="choices">
+            <button id="snake" onclick="playGame('snake')">🐍 Snake</button>
+            <button id="water" onclick="playGame('water')">💧 Water</button>
+            <button id="gun" onclick="playGame('gun')">🔫 Gun</button>
+        </div>
+        <div id="result"></div>
+        <div id="score">
+            <p>Your Score: <span id="your-score">0</span></p>
+            <p>Computer's Score: <span id="computer-score">0</span></p>
+        </div>
+    </div>
+
+    <!-- Sound Effects -->
+    <audio id="win-sound"  controls src="/draw.mp3" controls autoplay></audio>
+    <audio id="lose-sound" controls  src="/lose.mp3" controls autoplay></audio>
+    <audio id="draw-sound"  controls src="/win.mp3" controls autoplay></audio>
+
+    <script src="script.js"></script>
+</body>
+</html>
